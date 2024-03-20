@@ -1,8 +1,8 @@
 <template>
   <h1>Hello World</h1>
-  <p>{{ props.subTitle }}</p>
+  <p>{{ props.user.name }} | {{ props.user.age }}</p>
 </template>
 
 <script setup>
-const props = defineProps(["subTitle"]);
+const props = defineProps(["user"]);
 </script>
